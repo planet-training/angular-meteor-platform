@@ -5,4 +5,4 @@ Similar to the meteor-platform starter package but without loading
 - templating
 - jQuery
 
-but includes *urigo:angular*
+but includes ```urigo:angular```
