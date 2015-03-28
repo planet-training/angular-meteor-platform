@@ -6,3 +6,6 @@ Similar to the meteor-platform starter package but without loading
 - jQuery
 
 but includes ```urigo:angular```
+
+# angular-meteor-platform
+angular-meteor-platform
