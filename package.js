@@ -7,7 +7,8 @@ Package.describe({
   git: 'https://github.com/planet-training/angular-meteor-platform.git',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
-  documentation: 'README.md'
+  documentation: 'README.md',
+  summary : "Similar to the meteor-platform package but without blaze, templating, spacebars and jQuery"
 });
 
 
