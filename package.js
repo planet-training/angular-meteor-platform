@@ -23,56 +23,54 @@ Package.onUse(function(api) {
     // The normal "every package uses 'meteor'" rule only applies to packages
     // built from a package source directory, so we make sure apps get it too.
     // Meteor.isServer! The CSS extension handler! And so much more!
-    'meteor',
+    'meteor@1.1.5',
     // A standard Meteor app is a web app. (Without this, there will be no
     // 'main' function unless you define one yourself.)
-    'webapp',
+    'webapp@1.2.0',
     // It's Log! It's better than bad, it's good!
-    'logging',
+    'logging@1.0.7',
     // Tracker.autorun and friends. What's Meteor without reactivity?
-    'tracker',
-    'deps', // XXX COMPAT WITH PACKAGES BUILT FOR 0.9.0.
+    'tracker@1.0.6',
+    'deps@1.0.7', // XXX COMPAT WITH PACKAGES BUILT FOR 0.9.0.
     // The easiest way to get a little reactivity into your app.
-    'session',
+    'session@1.1.0',
     // DDP: Meteor's client/server protocol.
-    'ddp',
-    'livedata', // XXX COMPAT WITH PACKAGES BUILT FOR 0.9.0.
+    'ddp@1.1.0',
+    'livedata@1.0.13', // XXX COMPAT WITH PACKAGES BUILT FOR 0.9.0.
     // You want to keep your data somewhere? How about MongoDB?
-    'mongo',
+    'mongo@1.1.0',
     // Easy type assertions? check.
-    'check',
+    'check@1.0.5',
     // _.isUseful(true)
-    'underscore',
-    // $(".usefulToo")
-    //'jquery',
+    'underscore@1.0.3',
     // Life isn't always predictable.
-    'random',
+    'random@1.0.3',
     // People like being able to clone objects.
-    'ejson',
+    'ejson@1.0.6',
     // rock'n'roll
-    'urigo:angular'
+    'urigo:angular@0.3.5'
   ]);
 
   // These are useful too!  But you don't have to see their exports
   // unless you want to.
   api.use([
     // We can reload the client without messing up methods in flight.
-    'reload',
+    'reload@1.1.3',
     // And update automatically when new client code is available!
-    'autoupdate'
+    'autoupdate@1.2.0'
   ], ['client', 'server']);
 
   // More mobile specific implies
   api.imply([
     // Remove the 300ms click delay on mobile
-    'fastclick',
+    'fastclick@1.0.3',
     // Good defaults for the mobile status bar
-    'mobile-status-bar'
+    'mobile-status-bar@1.0.3'
   ], 'web.cordova');
 
   api.imply([
     // Launch screen configuration. Currently only on mobile but we include the
     // no-op browser version anyway.
-    'launch-screen'
+    'launch-screen@1.0.2'
   ], 'web');
 });
