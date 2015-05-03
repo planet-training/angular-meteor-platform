@@ -8,17 +8,19 @@ Similar to the meteor-platform starter package but without loading
 but includes ```urigo:angular```
 ##Getting Started
 ###Create a angular meteor app
-1. Let meteor scaffolded an app based on the ```meteor-platform```
+####Let meteor scaffolded an app based on the ```meteor-platform```
 ```
 meteor create my-app
 ```
-2. Switch to angular-meteor-platform via replacing ```meteor-platform``` with ```planettraining:angular-meteor-platform``` in the _.meteor/packages_:
+####angular-meteor-platform
+Switch to angular-meteor-platform via replacing ```meteor-platform``` with ```planettraining:angular-meteor-platform``` in the _.meteor/packages_:
 ```
 planettraining:angular-meteor-platform
 autopublish
 insecure
 ```
-3. Since we do not have templating anymore you do not have any 'html' like an index.html where you could something like that:
+####Define the "root markup"
+Since we do **not have templating** anymore you do not have any 'html' like an index.html where you could something like that:
 ```
 <html>
   <body ng-app="my-app">
@@ -39,7 +41,7 @@ Meteor.startup(function() { //meteor ready
         var includeElement = angular.element('<div>')
           .attr({'ng-include': "'path/to/index.ng.html'"})
           
-        //append the includeElement to the bofy
+        //append the includeElement to the body
         angular.element(document.body)
           .append(includeElement);
         //start the application
@@ -52,7 +54,8 @@ Meteor.startup(function() { //meteor ready
 //let's angular
 angular.module('myApp', ['angular-meteor']).controller(...).config(...) 
 ```
-4. Now you can angular
+####Do some Angular
+Now you can build your web application based on angular. Remember that all your markup code must end with *.ng.html* that it will transformed into angular's template cache and all your js should end with *.ng.js* that it will be processed by [ng-annotate](https://github.com/olov/ng-annotate.git)
 
 
 ###Accounts
