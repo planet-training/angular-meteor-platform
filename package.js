@@ -47,8 +47,11 @@ Package.onUse(function(api) {
     'random@1.0.3',
     // People like being able to clone objects.
     'ejson@1.0.6',
+    // I really don't know anything funny I could write about static files
+    'static-html@1.0.0-rc.4',
     // rock'n'roll
-    'urigo:angular@0.3.5'
+    'angular@1.0.0-rc.5'
+
   ]);
 
   // These are useful too!  But you don't have to see their exports
