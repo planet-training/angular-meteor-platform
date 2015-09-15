@@ -48,9 +48,9 @@ Package.onUse(function(api) {
     // People like being able to clone objects.
     'ejson@1.0.6',
     // I really don't know anything funny I could write about static files
-    'static-html@1.0.0-rc.4',
+    'static-html@1.0.0-rc.5',
     // rock'n'roll
-    'angular@1.0.0-rc.5'
+    'angular@1.0.0-rc.6'
 
   ]);
 
