@@ -23,30 +23,30 @@ Package.onUse(function(api) {
     // The normal "every package uses 'meteor'" rule only applies to packages
     // built from a package source directory, so we make sure apps get it too.
     // Meteor.isServer! The CSS extension handler! And so much more!
-    'meteor@1.1.5',
+    'meteor@1.1.7-rc.2',
     // A standard Meteor app is a web app. (Without this, there will be no
     // 'main' function unless you define one yourself.)
-    'webapp@1.2.0',
+    'webapp@1.2.2-rc.3',
     // It's Log! It's better than bad, it's good!
-    'logging@1.0.7',
+    'logging@1.0.8-rc.1',
     // Tracker.autorun and friends. What's Meteor without reactivity?
-    'tracker@1.0.6',
-    'deps@1.0.7', // XXX COMPAT WITH PACKAGES BUILT FOR 0.9.0.
+    'tracker@1.0.8-rc.0',
+    'deps@1.0.8-rc.0', // XXX COMPAT WITH PACKAGES BUILT FOR 0.9.0.
     // The easiest way to get a little reactivity into your app.
-    'session@1.1.0',
+    'session@1.1.1-rc.0',
     // DDP: Meteor's client/server protocol.
-    'ddp@1.1.0',
-    'livedata@1.0.13', // XXX COMPAT WITH PACKAGES BUILT FOR 0.9.0.
+    'ddp@1.2.1-rc.0',
+    'livedata@1.0.14-rc.0', // XXX COMPAT WITH PACKAGES BUILT FOR 0.9.0.
     // You want to keep your data somewhere? How about MongoDB?
-    'mongo@1.1.0',
+    'mongo@1.1.1-rc.4',
     // Easy type assertions? check.
-    'check@1.0.5',
+    'check@1.0.6-rc.0',
     // _.isUseful(true)
-    'underscore@1.0.3',
+    'underscore@1.0.4-rc.0',
     // Life isn't always predictable.
-    'random@1.0.3',
+    'random@1.0.4-rc.0',
     // People like being able to clone objects.
-    'ejson@1.0.6',
+    'ejson@1.0.7-rc.0',
     // I really don't know anything funny I could write about static files
     'static-html@1.0.0-rc.5',
     // rock'n'roll
@@ -58,22 +58,22 @@ Package.onUse(function(api) {
   // unless you want to.
   api.use([
     // We can reload the client without messing up methods in flight.
-    'reload@1.1.3',
+    'reload@1.1.4-rc.0',
     // And update automatically when new client code is available!
-    'autoupdate@1.2.0'
+    'autoupdate@1.2.3-rc.1'
   ], ['client', 'server']);
 
   // More mobile specific implies
   api.imply([
     // Remove the 300ms click delay on mobile
-    'fastclick@1.0.3',
+    'fastclick@1.0.7-rc.0',
     // Good defaults for the mobile status bar
-    'mobile-status-bar@1.0.3'
+    'mobile-status-bar@1.0.5-rc.1'
   ], 'web.cordova');
 
   api.imply([
     // Launch screen configuration. Currently only on mobile but we include the
     // no-op browser version anyway.
-    'launch-screen@1.0.2'
+    'launch-screen@1.0.3-rc.1'
   ], 'web');
 });
