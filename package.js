@@ -1,6 +1,6 @@
 Package.describe({
   name: 'planettraining:angular-meteor-platform',
-  version: '0.0.1',
+  version: '0.1.0',
   // Brief, one-line summary of the package.
   summary: '',
   // URL to the Git repository containing the source code for this package.
@@ -23,34 +23,34 @@ Package.onUse(function(api) {
     // The normal "every package uses 'meteor'" rule only applies to packages
     // built from a package source directory, so we make sure apps get it too.
     // Meteor.isServer! The CSS extension handler! And so much more!
-    'meteor@1.1.7-rc.2',
+    'meteor',
     // A standard Meteor app is a web app. (Without this, there will be no
     // 'main' function unless you define one yourself.)
-    'webapp@1.2.2-rc.3',
+    'webapp',
     // It's Log! It's better than bad, it's good!
-    'logging@1.0.8-rc.1',
+    'logging',
     // Tracker.autorun and friends. What's Meteor without reactivity?
-    'tracker@1.0.8-rc.0',
-    'deps@1.0.8-rc.0', // XXX COMPAT WITH PACKAGES BUILT FOR 0.9.0.
+    'tracker',
+    'deps', // XXX COMPAT WITH PACKAGES BUILT FOR 0.9.0.
     // The easiest way to get a little reactivity into your app.
-    'session@1.1.1-rc.0',
+    'session',
     // DDP: Meteor's client/server protocol.
-    'ddp@1.2.1-rc.0',
-    'livedata@1.0.14-rc.0', // XXX COMPAT WITH PACKAGES BUILT FOR 0.9.0.
+    'ddp',
+    'livedata', // XXX COMPAT WITH PACKAGES BUILT FOR 0.9.0.
     // You want to keep your data somewhere? How about MongoDB?
-    'mongo@1.1.1-rc.4',
+    'mongo',
     // Easy type assertions? check.
-    'check@1.0.6-rc.0',
+    'check',
     // _.isUseful(true)
-    'underscore@1.0.4-rc.0',
+    'underscore',
     // Life isn't always predictable.
-    'random@1.0.4-rc.0',
+    'random',
     // People like being able to clone objects.
-    'ejson@1.0.7-rc.0',
+    'ejson',
     // I really don't know anything funny I could write about static files
-    'static-html@1.0.0-rc.5',
+    'static-html',
     // rock'n'roll
-    'angular@1.0.0-rc.6'
+    'angular'
 
   ]);
 
@@ -58,22 +58,22 @@ Package.onUse(function(api) {
   // unless you want to.
   api.use([
     // We can reload the client without messing up methods in flight.
-    'reload@1.1.4-rc.0',
+    'reload',
     // And update automatically when new client code is available!
-    'autoupdate@1.2.3-rc.1'
+    'autoupdate'
   ], ['client', 'server']);
 
   // More mobile specific implies
   api.imply([
     // Remove the 300ms click delay on mobile
-    'fastclick@1.0.7-rc.0',
+    'fastclick',
     // Good defaults for the mobile status bar
-    'mobile-status-bar@1.0.5-rc.1'
+    'mobile-status-bar'
   ], 'web.cordova');
 
   api.imply([
     // Launch screen configuration. Currently only on mobile but we include the
     // no-op browser version anyway.
-    'launch-screen@1.0.3-rc.1'
+    'launch-screen'
   ], 'web');
 });
