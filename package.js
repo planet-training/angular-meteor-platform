@@ -42,7 +42,7 @@ Package.onUse(function(api) {
     // Easy type assertions? check.
     'check@1.0.6',
     // _.isUseful(true)
-    'underscore@1.0.3',
+    'underscore@1.0.4',
     // Life isn't always predictable.
     'random@1.0.4',
     // People like being able to clone objects.
@@ -67,7 +67,7 @@ Package.onUse(function(api) {
     // Remove the 300ms click delay on mobile
     'fastclick@1.0.7',
     // Good defaults for the mobile status bar
-    'mobile-status-bar@1.0.6sc'
+    'mobile-status-bar@1.0.6'
   ], 'web.cordova');
 
   api.imply([
