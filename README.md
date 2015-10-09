@@ -9,7 +9,7 @@ but includes ```angular```
 
 # WARNING:
 
-As of meteor 1.2.0.2 it has a hidden jQuery dependency in static-html if you use attributes on the body tag i.e. ```<body ng-app="myApp">...</body>```.
+meteor 1.2.0.2 has a hidden jQuery dependency in static-html if you use attributes on the body tag i.e. ```<body ng-app="myApp">...</body>```.
 Therefore you need explicitly add the jQuery dependencies for now until this is resolved https://github.com/meteor/meteor/issues/5320 or don't use body attributes
 
 
