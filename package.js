@@ -2,7 +2,7 @@ Package.describe({
   name: 'planettraining:angular-meteor-platform',
   version: '0.0.3',
   // Brief, one-line summary of the package.
-  summary: '',
+
   // URL to the Git repository containing the source code for this package.
   git: 'https://github.com/planet-training/angular-meteor-platform.git',
   // By default, Meteor will default to using README.md for documentation.
@@ -48,9 +48,9 @@ Package.onUse(function(api) {
     // People like being able to clone objects.
     'ejson@1.0.7',
     // I really don't know anything funny I could write about static files
-    'static-html@1.0.2',
+    //'static-html@1.0.2',
     // rock'n'roll
-    'angular@1.0.1'
+    'angular@1.2.0-rc.5'
   ]);
 
   // These are useful too!  But you don't have to see their exports
