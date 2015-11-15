@@ -50,7 +50,7 @@ Package.onUse(function(api) {
     // I really don't know anything funny I could write about static files
     //'static-html@1.0.2',
     // rock'n'roll
-    'angular@1.2.0-rc.5'
+    'angular@1.2.0'
   ]);
 
   // These are useful too!  But you don't have to see their exports
